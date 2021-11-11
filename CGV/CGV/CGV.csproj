@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{61B42D32-BE21-4229-AFAC-0EC229C75FA7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CGV</RootNamespace>
+    <AssemblyName>ManagermentCGV</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Tien\Desktop\CGV\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.jpg.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>119234F9742036105DCE2AFCAEACFB722343CD35</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CGV_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v21.2.UI, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.2.UI, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v21.2.Extensions, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v21.2.Wizard, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v21.2.Extensions, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao.Designer.cs">
+      <DependentUpon>BaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseShowTimes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseShowTimes.Designer.cs">
+      <DependentUpon>ChooseShowTimes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientFrennlly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientFrennlly.Designer.cs">
+      <DependentUpon>ClientFrennlly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateFilmGenre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateFilmGenre.Designer.cs">
+      <DependentUpon>CreateFilmGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateMovie.Designer.cs">
+      <DependentUpon>CreateMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateTicket.Designer.cs">
+      <DependentUpon>CreateTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data.Designer.cs">
+      <DependentUpon>Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DinhDang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DinhDang.Designer.cs">
+      <DependentUpon>DinhDang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoiMatKhau.Designer.cs">
+      <DependentUpon>FormDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogic.Designer.cs">
+      <DependentUpon>FormLogic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formReport.Designer.cs">
+      <DependentUpon>formReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formShowTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formShowTime.Designer.cs">
+      <DependentUpon>formShowTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\DelegateUser.cs" />
+    <Compile Include="hienThiTenKhachHang.cs" />
+    <Compile Include="KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHang.Designer.cs">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoaiPhong.Designer.cs">
+      <DependentUpon>LoaiPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu2.Designer.cs">
+      <DependentUpon>Menu2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\CGVDBContext.cs" />
+    <Compile Include="Models\Client.cs" />
+    <Compile Include="Models\FilmGenre.cs" />
+    <Compile Include="Models\FormatDetail.cs" />
+    <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\MovieDetails.cs" />
+    <Compile Include="Models\MovieFormat.cs" />
+    <Compile Include="Models\Room.cs" />
+    <Compile Include="Models\Showtime.cs" />
+    <Compile Include="Models\Staff.cs" />
+    <Compile Include="Models\Ticket.cs" />
+    <Compile Include="NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVien.Designer.cs">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhanQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhanQuyen.Designer.cs">
+      <DependentUpon>PhanQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLCGVDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCGVDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCGVDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCGVDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RoomMate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomMate.Designer.cs">
+      <DependentUpon>RoomMate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="TaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaiKhoan.Designer.cs">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicketSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketSales.Designer.cs">
+      <DependentUpon>TicketSales.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaoCao.resx">
+      <DependentUpon>BaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseShowTimes.resx">
+      <DependentUpon>ChooseShowTimes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientFrennlly.resx">
+      <DependentUpon>ClientFrennlly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateFilmGenre.resx">
+      <DependentUpon>CreateFilmGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateMovie.resx">
+      <DependentUpon>CreateMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateTicket.resx">
+      <DependentUpon>CreateTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data.resx">
+      <DependentUpon>Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DinhDang.resx">
+      <DependentUpon>DinhDang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDoiMatKhau.resx">
+      <DependentUpon>FormDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogic.resx">
+      <DependentUpon>FormLogic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formReport.resx">
+      <DependentUpon>formReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formShowTime.resx">
+      <DependentUpon>formShowTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoaiPhong.resx">
+      <DependentUpon>LoaiPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu2.resx">
+      <DependentUpon>Menu2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien.resx">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhanQuyen.resx">
+      <DependentUpon>PhanQuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report\reportTicket.rdlc" />
+    <EmbeddedResource Include="RoomMate.resx">
+      <DependentUpon>RoomMate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaiKhoan.resx">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketSales.resx">
+      <DependentUpon>TicketSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="CGV_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QLCGVDataSet.xsc">
+      <DependentUpon>QLCGVDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLCGVDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCGVDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCGVDataSet.xss">
+      <DependentUpon>QLCGVDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLCGVDataSet1.xsc">
+      <DependentUpon>QLCGVDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLCGVDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCGVDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCGVDataSet1.xss">
+      <DependentUpon>QLCGVDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\1280px-CGV_logo.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1899139.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-163074712011441713797.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harry-potter-and-the-sorcerers-stone-i83426.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Harry-Potter-Poster-2007-MyPosterCollection.com-43-683x1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hermione-se-hanh-phuc-hon-neu-o-ben-harry-potter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1-1533780912337616585502.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9eb942239134596a0025.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a0ed7f77ac60643e3d71.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1280px-CGV_logo.svg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-password-others-miscellaneous-random-password-generator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp2885694.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rn1vEe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\438deee628412c42d519a0764534f3cf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp2619141.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\122932.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\438deee628412c42d519a0764534f3cf1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parchment-paper-template-bowfu-fresh-parchment-powerpoint-background-monpence-of-parchment-paper-template-x2bal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a481e995e81c0950beb58507eea2be02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8f210b96991f666827b8da4dc2fafa9c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinema-655332_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-carnival-icon-ticket-icon---with-outline-filled-style-png-image_556197.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-movie-icon-design-png-image_2153114.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cinema-auditorium-with-screen-and-seats-icon-png-image_2023102.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tai_khoan_thanh_toan_thong_thuong_1_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-user-male-client-services-flat-color-icon-vector-icon-png-image_1651127.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foody-upload-api-foody-mobile-foody-upload-api-foo-190620105620.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poster-561x800.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b5224440179eac5445ec6a362e09f48d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ca551ce5be31cf9b69ebe1c60d3695c9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stars-in-space-wallpaper-2560x1920_27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\335-3357617_wallpaper-planet-with-rings-cloud-cluster-of-stars.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp2904455.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp29044551.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-clerk-computer-icons-clip-art-clerk-5b20ba415e19a0.6115672115288714893854.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-revenue-affiliate-marketing-product-business-profits-free-business-icons-5c7fcaa1927c90.4416854115518788176.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.jpg.ico" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
